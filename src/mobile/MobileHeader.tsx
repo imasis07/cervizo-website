@@ -15,13 +15,14 @@ const MobileHeader = () => {
       <div className="flex h-16 items-center justify-between px-4">
 
     <span className="
-  text-xl sm:text-2xl
+  text-[26px] sm:text-[32px]
   font-extrabold
   text-gradient-primary
   leading-none
 ">
   Cervizo
 </span>
+
 
 
         {/* Actions */}
