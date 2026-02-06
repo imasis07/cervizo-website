@@ -28,16 +28,14 @@ const Hero = () => {
   </span>
 
   {/* Right AI-style star */}
-  <svg
-    className="h-4 w-4 text-white"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M12 2l1.9 5.8L20 10l-6.1 2.2L12 18l-1.9-5.8L4 10l6.1-2.2L12 2z" />
-  </svg>
-</div>
-
-
+     <svg
+      className="h-4 w-4 text-white"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+          >
+         <path d="M12 2l1.9 5.8L20 10l-6.1 2.2L12 18l-1.9-5.8L4 10l6.1-2.2L12 2z" />
+         </svg>
+         </div>
 
           {/* Headline */}
           <h1 className="mb-6 animate-fade-in text-4xl font-extrabold leading-tight text-primary-foreground md:text-5xl lg:text-6xl">

@@ -145,3 +145,37 @@
     box-shadow: var(--shadow-hover);
   }
 }
+
+/* ===============================
+   Hero Flow / Wave Animations
+   =============================== */
+
+@keyframes waveSlow {
+  0% { transform: translateX(-20%) translateY(0); }
+  50% { transform: translateX(20%) translateY(-10px); }
+  100% { transform: translateX(-20%) translateY(0); }
+}
+
+@keyframes waveMid {
+  0% { transform: translateX(30%) translateY(0); }
+  50% { transform: translateX(-30%) translateY(15px); }
+  100% { transform: translateX(30%) translateY(0); }
+}
+
+@keyframes waveFast {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-waveSlow {
+  animation: waveSlow 18s ease-in-out infinite;
+}
+
+.animate-waveMid {
+  animation: waveMid 14s ease-in-out infinite;
+}
+
+.animate-waveFast {
+  animation: waveFast 10s ease-in-out infinite;
+}
