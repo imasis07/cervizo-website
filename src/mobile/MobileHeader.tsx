@@ -14,19 +14,9 @@ const MobileHeader = () => {
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur-md">
       <div className="flex h-16 items-center justify-between px-4">
 
-        {/* Location */}
-        <div className="flex items-center gap-2">
-          <MapPin className="h-4 w-4 text-primary" />
-          <div className="leading-tight">
-            <p className="text-sm font-semibold text-foreground">
-              Old Ballygunge Road
-            </p>
-            <div className="flex items-center gap-1 text-xs text-muted-foreground">
-              <span>Kolkata</span>
-              <ChevronDown className="h-3 w-3" />
-            </div>
-          </div>
-        </div>
+        <span className="text-lg font-bold text-gradient-primary">
+  Cervizo
+</span>
 
         {/* Actions */}
         <div className="flex items-center gap-2">
