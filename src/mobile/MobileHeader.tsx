@@ -14,9 +14,15 @@ const MobileHeader = () => {
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur-md">
       <div className="flex h-16 items-center justify-between px-4">
 
-        <span className="text-lg font-bold text-gradient-primary">
+    <span className="
+  text-xl sm:text-2xl
+  font-extrabold
+  text-gradient-primary
+  leading-none
+">
   Cervizo
 </span>
+
 
         {/* Actions */}
         <div className="flex items-center gap-2">

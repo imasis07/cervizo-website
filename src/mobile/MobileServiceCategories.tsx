@@ -23,17 +23,30 @@ const categories = [
 const MobileServiceCategories = () => {
   return (
     <section className="px-4 pt-6 pb-8">
-      
+
+      {/* Heading */}
       <h2 className="mb-4 text-lg font-bold text-foreground">
         What are you looking for?
       </h2>
 
+      {/* Categories grid */}
       <div className="grid grid-cols-3 gap-4">
         {categories.map((category) => (
           <button
             key={category.name}
-            className="flex flex-col items-center rounded-xl border border-border bg-card p-3"
+            className="
+              flex flex-col items-center
+              rounded-xl border border-border bg-card p-3
+              transition-transform duration-200 ease-out
+              hover:scale-105
+              active:scale-95
+              focus:outline-none
+            "
+            onClick={() => {
+              console.log(category.name);
+            }}
           >
+            {/* Image */}
             <div className="mb-2 flex h-24 w-24 items-center justify-center">
               <img
                 src={category.image}
@@ -42,6 +55,7 @@ const MobileServiceCategories = () => {
               />
             </div>
 
+            {/* Text */}
             <span className="text-center text-xs font-medium text-foreground">
               {category.name}
             </span>
